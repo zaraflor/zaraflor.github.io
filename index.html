@@ -13,7 +13,10 @@
 <body>
 <header class="header">
     <div class="logo">
-        <img src="images/logo.png" alt="Logo de la Floristería" class="logo-image">
+        <picture>
+            <source srcset="images/logo.avif" type="image/avif">
+            <img src="images/logo.png" alt="Logo de la Floristería" class="logo-image" loading="lazy">
+        </picture>
     </div>
     <nav class="nav">
         <button class="menu-toggle" id="menuToggle">☰</button>
@@ -26,7 +29,10 @@
 </header>
 
 <section class="hero">
-    <img src="images/hero-image.jpg" alt="Hermosos arreglos florales" class="hero-image">
+    <picture>
+        <source srcset="images/hero-image.avif" type="image/avif">
+        <img src="images/hero-image.jpg" alt="Hermosos arreglos florales" class="hero-image" loading="lazy">
+    </picture>
     <div class="hero-overlay">
         <h1>Flores que hablan el lenguaje de tus emociones</h1>
         <button class="call-to-action" onclick="window.location.href='#contacto'">Descubre nuestros arreglos</button>
@@ -73,7 +79,10 @@
     <h2>Contáctanos</h2>
     <div class="map">
         <a href="https://www.google.com/maps?q=floristeria-zaraflor-huesca" target="_blank">
-            <img src="images/static-map.jpg" alt="Mapa de ubicación de la floristería" class="map-image">
+            <picture>
+                <source srcset="images/static-map.avif" type="image/avif">
+                <img src="images/static-map.jpg" alt="Mapa de ubicación de la floristería" class="map-image" loading="lazy">
+            </picture>
         </a>
     </div>
     <div class="info">
