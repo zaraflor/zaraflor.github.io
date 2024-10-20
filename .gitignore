@@ -1,0 +1,47 @@
+# Ignorar archivos de sistema de macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Icono de carpeta en macOS
+Icon?
+
+# Archivos que pueden aparecer cuando macOS accede a un volumen de red
+._*
+
+# Archivos de Thumbnails
+Thumbs.db
+
+# Archivos de IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+out/
+target/
+
+# Ignorar configuraciones de entorno local de IntelliJ IDEA
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+.idea/libraries/
+.idea/modules.xml
+.idea/.name
+
+# IntelliJ IDEA project files
+*.ipr
+*.iws
+*.iml
+
+# Maven y Gradle (si usas estos build tools)
+target/
+build/
+
+# Archivos temporales y logs
+logs/
+*.log
+*.swp
+*.swo
+*~
+
+# Directorios de entorno de desarrollo
+.vscode/

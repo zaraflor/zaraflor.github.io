@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bienvenidos a nuestra floristería. Descubre la belleza de nuestras flores y arreglos para cada ocasión.">
+    <title>Floristería - La Belleza de las Flores</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png" alt="Logo de la Floristería" class="logo-image">
+        </div>
+        <nav class="nav">
+            <button class="menu-toggle" id="menuToggle">☰</button>
+            <ul class="menu" id="menu">
+                <li><a href="#sobre-nosotros" class="menu-link">Sobre Nosotros</a></li>
+                <li><a href="#servicios" class="menu-link">Servicios</a></li>
+                <li><a href="#contacto" class="menu-link">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <img src="images/hero-image.jpg" alt="Hermosos arreglos florales" class="hero-image">
+        <div class="hero-overlay">
+            <h1>Flores que hablan el lenguaje de tus emociones</h1>
+            <button class="call-to-action" onclick="window.location.href='#contacto'">Descubre nuestros arreglos</button>
+        </div>
+    </section>
+
+    <!-- Sección Sobre Nosotros -->
+    <section id="sobre-nosotros" class="about-section">
+        <div class="about-content">
+            <h2>Sobre Nosotros</h2>
+            <p>En nuestra floristería, nos dedicamos a traer la belleza de la naturaleza a tu vida diaria. Con más de 10 años de experiencia, hemos ayudado a nuestros clientes a encontrar la flor perfecta para cada ocasión.</p>
+            <p>Nuestro compromiso es ofrecer flores frescas y de alta calidad, y crear arreglos que transmitan emociones. Creemos en el poder de las flores para transformar espacios y alegrar corazones.</p>
+            <p><strong>Valores:</strong> Calidad, compromiso, y creatividad son los pilares que nos guían en cada uno de nuestros diseños.</p>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services-section">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service">
+                <i class="fas fa-truck service-icon"></i>
+                <h3>Entrega a Domicilio</h3>
+                <p>Recibe tus flores frescas en la puerta de tu casa, con entrega rápida y segura.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-paint-brush service-icon"></i>
+                <h3>Arreglos Personalizados</h3>
+                <p>Diseñamos arreglos florales únicos para cada ocasión, adaptados a tus necesidades.</p>
+            </div>
+            <div class="service">
+                <i class="fas fa-seedling service-icon"></i>
+                <h3>Decoración de Eventos</h3>
+                <p>Flores para bodas, cumpleaños y eventos especiales. Crea un ambiente mágico.</p>
+            </div>
+        </div>
+    </section>
+
+<!-- Sección de Contacto -->
+<section id="contacto" class="info-section">
+    <h2>Contáctanos</h2>
+    <div class="map">
+        <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+    <div class="info">
+        <h3>Información de Contacto</h3>
+        <p>Dirección: Calle de las Flores, 123, Ciudad</p>
+        <p>Teléfono: +34 123 456 789</p>
+        <p>Email: contacto@floristeria.com</p>
+        <button class="call-to-action" onclick="window.open('https://wa.me/34123456789', '_blank')">
+            <i class="fab fa-whatsapp"></i> Chatea con nosotros
+        </button>
+    </div>
+</section>
+
+
+
+    <footer>
+        <p>&copy; 2024 Floristería. Todos los derechos reservados.</p>
+    </footer>
+
+
+    <!-- Botón para volver al inicio con icono de FontAwesome -->
+    <button class="scroll-top" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+
+    <script>
+        // Mostrar/ocultar el menú
+        document.getElementById('menuToggle').addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        });
+
+        // Cerrar el menú cuando se hace clic en cualquier enlace del menú
+        document.querySelectorAll('.menu-link').forEach(link => {
+            link.addEventListener('click', function () {
+                const menu = document.getElementById('menu');
+                menu.classList.remove('active');
+            });
+        });
+
+        // Funcionalidad del botón de scroll-to-top
+        const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+        // Mostrar el botón cuando el usuario haga scroll hacia abajo
+        window.addEventListener('scroll', function () {
+            if (window.scrollY > 300) {
+                scrollTopBtn.style.display = 'block';
+            } else {
+                scrollTopBtn.style.display = 'none';
+            }
+        });
+
+        // Desplazarse suavemente hacia la parte superior al hacer clic
+        scrollTopBtn.addEventListener('click', function () {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+    </script>
+</body>
+</html>
