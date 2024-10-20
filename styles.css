@@ -216,6 +216,7 @@ footer {
     width: 100%;
     box-sizing: border-box;
 }
+
 .services-section {
     background-color: #EFEFEF;
     padding: 60px 20px;
@@ -303,7 +304,13 @@ footer {
 .map, .info {
     flex: 1 1 45%;
     min-width: 300px;
+    background: #FFF; /* Asegura que ambas tengan fondo blanco */
+    padding: 15px; /* Espaciado interno igual para ambas columnas */
+    border-radius: 5px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    text-align: center; /* Centra el contenido */
 }
+
 
 .map iframe {
     width: 100%;
@@ -364,6 +371,20 @@ footer {
         flex: 1 1 100%;
     }
 }
+
+.map img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px; /* Esquinas redondeadas para la imagen */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave al hacer hover */
+}
+
+.map img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al hacer hover */
+}
+
 
 
 
