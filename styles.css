@@ -337,29 +337,67 @@ footer {
 }
 
 .info-section .call-to-action {
-    background-color: #25D366; /* Color verde de WhatsApp */
     border: none;
-    padding: 8px 15px; /* Botón más pequeño */
+    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    font-size: 0.9rem;
     color: #FFF;
-    font-size: 0.9rem; /* Fuente un poco más pequeña */
     cursor: pointer;
     border-radius: 5px;
     margin-top: 15px;
-    transition: background-color 0.3s ease;
     display: inline-flex;
     align-items: center;
-    gap: 5px; /* Espacio entre el icono y el texto */
-    width: auto; /* Ajusta el ancho al contenido */
-    align-self: center; /* Centra el botón horizontalmente */
+    gap: 8px; /* Espacio entre el icono y el texto */
+    transition: background-color 0.3s ease;
+    width: auto;
+    align-self: center;
 }
 
-.info-section .call-to-action:hover {
-    background-color: #1EBE5B; /* Color más oscuro al pasar el cursor */
+.contact-buttons {
+    display: flex;
+    flex-direction: column; /* Coloca los botones en una columna */
+    gap: 5px; /* Espacio entre los botones */
+    align-items: center; /* Centra los botones horizontalmente */
+    margin-top: 15px;
 }
 
-.info-section .call-to-action i {
-    font-size: 1.2rem; /* Tamaño del icono de WhatsApp */
+.contact-buttons .call-to-action {
+    width: 100%; /* Ocupa el ancho completo del contenedor */
+    max-width: 260px; /* Ajusta el ancho máximo para que no se extiendan demasiado */
+    text-align: center; /* Centra el texto */
+    padding: 10px 20px; /* Asegura un espaciado interno uniforme */
+    display: inline-flex;
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    border: none;
+    font-size: 0.9rem;
+    color: #FFF;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
 }
+
+
+.contact-buttons .whatsapp {
+    background-color: #25D366; /* Color verde de WhatsApp */
+}
+
+.contact-buttons .whatsapp:hover {
+    background-color: #1EBE5B; /* Verde más oscuro al pasar el cursor */
+}
+
+.contact-buttons .phone {
+    background-color: #007BFF; /* Color azul para el botón de llamada */
+}
+
+.contact-buttons .phone:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+}
+
+.contact-buttons .call-to-action i {
+    font-size: 1.2rem; /* Tamaño del icono */
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {
