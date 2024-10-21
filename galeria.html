@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería - Floristería Zaraflor Huesca</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+          media="print" onload="this.media='all'">
+    <noscript>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    </noscript>
+</head>
+<body>
+<header class="header">
+    <div class="logo">
+        <a href="index.html">
+            <picture>
+                <source srcset="images/logo.avif" type="image/avif">
+                <img src="images/logo.png" alt="Logo de la Floristería Zaraflor" class="logo-image" loading="lazy">
+            </picture>
+        </a>
+    </div>
+    <nav class="nav">
+        <button class="menu-toggle" id="menuToggle">☰</button>
+        <ul class="menu" id="menu">
+            <li><a href="index.html#sobre-nosotros" class="menu-link">Sobre Nosotros</a></li>
+            <li><a href="index.html#servicios" class="menu-link">Servicios</a></li>
+            <li><a href="index.html#contacto" class="menu-link">Contacto</a></li>
+            <li><a href="galeria.html" class="menu-link">Galería</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Sección de Galería -->
+<section class="gallery-section">
+    <h2>Galería de Nuestros Arreglos</h2>
+    <div class="gallery-grid">
+        <picture>
+            <source srcset="images/gallery/1.avif" type="image/avif">
+            <img src="images/gallery/1.jpg" alt="Arreglo floral 1" class="gallery-image" loading="lazy">
+        </picture>
+        <picture>
+            <source srcset="images/gallery/2.avif" type="image/avif">
+            <img src="images/gallery/2.jpg" alt="Arreglo floral 2" class="gallery-image" loading="lazy">
+        </picture>
+        <picture>
+            <source srcset="images/gallery/3.avif" type="image/avif">
+            <img src="images/gallery/3.jpg" alt="Arreglo floral 3" class="gallery-image" loading="lazy">
+        </picture>
+        <!-- Añade más imágenes según sea necesario -->
+    </div>
+</section>
+
+<!-- Sección de Volver a la Página Principal -->
+<section class="back-to-home">
+    <a href="index.html" class="call-to-action">Volver a la Página Principal</a>
+</section>
+
+
+<footer>
+    <p>&copy; 2024 Zaraflor. Todos los derechos reservados.</p>
+</footer>
+
+<!-- Botón para volver al inicio con icono de FontAwesome -->
+<button class="scroll-top" id="scrollTopBtn">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+    // Mostrar/ocultar el menú
+    document.getElementById('menuToggle').addEventListener('click', function () {
+        const menu = document.getElementById('menu');
+        menu.classList.toggle('active');
+    });
+
+    // Cerrar el menú cuando se hace clic en cualquier enlace del menú
+    document.querySelectorAll('.menu-link').forEach(link => {
+        link.addEventListener('click', function () {
+            const menu = document.getElementById('menu');
+            menu.classList.remove('active');
+        });
+    });
+
+    // Funcionalidad del botón de scroll-to-top
+    const scrollTopBtn = document.getElementById('scrollTopBtn');
+
+    // Mostrar el botón cuando el usuario haga scroll hacia abajo
+    window.addEventListener('scroll', function () {
+        if (window.scrollY > 300) {
+            scrollTopBtn.style.display = 'block';
+        } else {
+            scrollTopBtn.style.display = 'none';
+        }
+    });
+
+    // Desplazarse suavemente hacia la parte superior al hacer clic
+    scrollTopBtn.addEventListener('click', function () {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    });
+</script>
+</body>
+</html>

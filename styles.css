@@ -19,8 +19,8 @@ body {
 }
 
 .logo-image {
-    height: 50px;
-    max-width: 150px;
+    height: 80px;
+    max-width: 200px;
     object-fit: contain;
 }
 
@@ -65,7 +65,7 @@ body {
 .menu-toggle {
     background: none;
     border: none;
-    font-size: 1.5rem;
+    font-size: 2rem;
     cursor: pointer;
     padding: 10px;
 }
@@ -226,7 +226,7 @@ footer {
 }
 
 .services-section h2 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 40px;
     color: #333;
 }
@@ -450,5 +450,104 @@ footer {
     border-color: #FFD700;
 }
 
+.gallery-preview {
+    background-color: #FFF; /* Fondo blanco para mantener la coherencia con otras secciones */
+    padding: 60px 20px; /* Espaciado interno para la sección */
+    text-align: center; /* Centra el contenido de la sección */
+}
+
+.gallery-preview h2 {
+    font-size: 2rem; /* Tamaño del título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    color: #333; /* Color del texto del título */
+}
+
+.gallery-preview p {
+    font-size: 1rem; /* Tamaño del texto de descripción */
+    margin-bottom: 20px; /* Espacio debajo del párrafo */
+    color: #555; /* Color del texto */
+    max-width: 800px; /* Ancho máximo del párrafo para evitar que se extienda demasiado */
+    margin-left: auto;
+    margin-right: auto; /* Centra el párrafo */
+    line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+.gallery-preview .call-to-action {
+    background-color: #FFD700; /* Color de fondo del botón */
+    color: #000; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px; /* Espaciado interno del botón */
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados para un diseño suave */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para el hover */
+    text-decoration: none; /* Elimina el subrayado en el enlace */
+    display: inline-block; /* Asegura que el botón se comporte como un botón */
+    margin-top: 10px; /* Espacio superior para separar el botón del párrafo */
+}
+
+.gallery-preview .call-to-action:hover {
+    background-color: #E6C200; /* Color más oscuro para el hover */
+    color: #000; /* Mantiene el texto en negro */
+}
 
 
+
+.gallery-section {
+    background-color: #FFF;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2rem;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-home {
+    background-color: #FFF; /* Fondo blanco para la sección */
+    padding: 40px 20px; /* Espaciado interno */
+    text-align: center; /* Centra el contenido */
+    border-top: 1px solid #DDD; /* Línea superior para separar visualmente */
+}
+
+.back-to-home .call-to-action {
+    background-color: #FFD700; /* Color del botón */
+    color: #000; /* Color del texto del botón */
+    border: none;
+    padding: 10px 20px; /* Espaciado interno */
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px; /* Bordes redondeados */
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Elimina el subrayado en el enlace */
+    display: inline-block; /* Asegura que el botón se vea como un botón */
+    margin-top: 20px; /* Espacio superior para separar el botón */
+}
+
+.back-to-home .call-to-action:hover {
+    background-color: #E6C200; /* Color más oscuro al pasar el cursor */
+    color: #000; /* Mantiene el texto en negro */
+}
