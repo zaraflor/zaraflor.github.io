@@ -1,4 +1,3 @@
-/* Estilos básicos */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -115,7 +114,6 @@ body {
     margin-top: 20px;
 }
 
-
 footer {
     background: #333;
     color: #FFF;
@@ -123,32 +121,30 @@ footer {
     padding: 10px;
 }
 
-/* Botón de scroll-to-top */
 .scroll-top {
-    display: none; /* Oculto por defecto */
+    display: none;
     position: fixed;
     bottom: 15px;
     right: 15px;
     background: #FFD700;
     border: none;
     padding: 10px;
-    border-radius: 5px; /* Borde ligeramente redondeado */
+    border-radius: 5px;
     cursor: pointer;
-    font-size: 1.5rem; /* Ajusta el tamaño del icono */
+    font-size: 1.5rem;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
     z-index: 1000;
-    opacity: 0.8; /* Hace que el botón sea un poco transparente */
-    transition: opacity 0.3s ease; /* Suaviza la transición al cambiar la opacidad */
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
 }
 
 .scroll-top:hover {
-    opacity: 1; /* Al pasar el cursor, el botón se vuelve completamente opaco */
+    opacity: 1;
 }
 
 .scroll-top i {
-    color: #333; /* Color del icono */
+    color: #333;
 }
-
 
 @media (max-width: 768px) {
     .hero-overlay h1 {
@@ -187,13 +183,13 @@ footer {
     background-color: #FFF;
     padding: 40px 20px;
     text-align: center;
-    width: 100%; /* Hace que la sección ocupe todo el ancho */
-    box-sizing: border-box; /* Asegura que el padding no exceda el ancho total */
+    width: 100%;
+    box-sizing: border-box;
 }
 
 .about-content {
     max-width: 800px;
-    margin: auto; /* Centra el contenido dentro de la sección */
+    margin: auto;
 }
 
 .about-section h2 {
@@ -206,15 +202,6 @@ footer {
     margin-bottom: 15px;
     line-height: 1.6;
     color: #555;
-}
-
-
-.services-section {
-    background-color: #EFEFEF;
-    padding: 60px 20px;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
 }
 
 .services-section {
@@ -249,12 +236,12 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center; /* Centra el contenido verticalmente */
+    justify-content: center;
     min-height: 300px;
 }
 
 .service-icon {
-    font-size: 80px; /* Tamaño ajustado del icono */
+    font-size: 80px;
     color: #FFD700;
     margin-bottom: 20px;
 }
@@ -272,7 +259,6 @@ footer {
     text-align: center;
 }
 
-/* Ajustes responsivos para pantallas más pequeñas */
 @media (max-width: 768px) {
     .services {
         flex-direction: column;
@@ -297,20 +283,19 @@ footer {
     font-size: 2rem;
     margin-bottom: 20px;
     text-align: center;
-    width: 100%; /* Hace que el título ocupe todo el ancho */
+    width: 100%;
     color: #333;
 }
 
 .map, .info {
     flex: 1 1 45%;
     min-width: 300px;
-    background: #FFF; /* Asegura que ambas tengan fondo blanco */
-    padding: 15px; /* Espaciado interno igual para ambas columnas */
-    border-radius: 5px; /* Bordes redondeados */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
-    text-align: center; /* Centra el contenido */
+    background: #FFF;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
-
 
 .map iframe {
     width: 100%;
@@ -338,7 +323,7 @@ footer {
 
 .info-section .call-to-action {
     border: none;
-    padding: 10px 20px; /* Ajusta el tamaño del botón */
+    padding: 10px 20px;
     font-size: 0.9rem;
     color: #FFF;
     cursor: pointer;
@@ -346,7 +331,7 @@ footer {
     margin-top: 15px;
     display: inline-flex;
     align-items: center;
-    gap: 8px; /* Espacio entre el icono y el texto */
+    gap: 8px;
     transition: background-color 0.3s ease;
     width: auto;
     align-self: center;
@@ -354,20 +339,20 @@ footer {
 
 .contact-buttons {
     display: flex;
-    flex-direction: column; /* Coloca los botones en una columna */
-    gap: 5px; /* Espacio entre los botones */
-    align-items: center; /* Centra los botones horizontalmente */
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
     margin-top: 15px;
 }
 
 .contact-buttons .call-to-action {
-    width: 100%; /* Ocupa el ancho completo del contenedor */
-    max-width: 260px; /* Ajusta el ancho máximo para que no se extiendan demasiado */
-    text-align: center; /* Centra el texto */
-    padding: 10px 20px; /* Asegura un espaciado interno uniforme */
+    width: 100%;
+    max-width: 260px;
+    text-align: center;
+    padding: 10px 20px;
     display: inline-flex;
-    align-items: center; /* Centra el contenido verticalmente */
-    justify-content: center; /* Centra el contenido horizontalmente */
+    align-items: center;
+    justify-content: center;
     border: none;
     font-size: 0.9rem;
     color: #FFF;
@@ -376,30 +361,27 @@ footer {
     cursor: pointer;
 }
 
-
 .contact-buttons .whatsapp {
-    background-color: #25D366; /* Color verde de WhatsApp */
+    background-color: #25D366;
 }
 
 .contact-buttons .whatsapp:hover {
-    background-color: #1EBE5B; /* Verde más oscuro al pasar el cursor */
+    background-color: #1EBE5B;
 }
 
 .contact-buttons .phone {
-    background-color: #007BFF; /* Color azul para el botón de llamada */
+    background-color: #007BFF;
 }
 
 .contact-buttons .phone:hover {
-    background-color: #0056b3; /* Azul más oscuro al pasar el cursor */
+    background-color: #0056b3;
 }
 
 .contact-buttons .call-to-action i {
-    font-size: 1.2rem; /* Tamaño del icono */
-    margin-right: 8px; /* Espacio entre el icono y el texto */
+    font-size: 1.2rem;
+    margin-right: 8px;
 }
 
-
-/* Ajustes responsivos */
 @media (max-width: 768px) {
     .info-section {
         flex-direction: column;
@@ -413,14 +395,14 @@ footer {
 .map img {
     width: 100%;
     height: auto;
-    border-radius: 5px; /* Esquinas redondeadas para la imagen */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Sombra para dar profundidad */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave al hacer hover */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .map img:hover {
-    transform: scale(1.05); /* Efecto de zoom al pasar el cursor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Aumenta la sombra al hacer hover */
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .social-links {
@@ -451,47 +433,45 @@ footer {
 }
 
 .gallery-preview {
-    background-color: #FFF; /* Fondo blanco para mantener la coherencia con otras secciones */
-    padding: 60px 20px; /* Espaciado interno para la sección */
-    text-align: center; /* Centra el contenido de la sección */
+    background-color: #FFF;
+    padding: 60px 20px;
+    text-align: center;
 }
 
 .gallery-preview h2 {
-    font-size: 2rem; /* Tamaño del título */
-    margin-bottom: 20px; /* Espacio debajo del título */
-    color: #333; /* Color del texto del título */
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .gallery-preview p {
-    font-size: 1rem; /* Tamaño del texto de descripción */
-    margin-bottom: 20px; /* Espacio debajo del párrafo */
-    color: #555; /* Color del texto */
-    max-width: 800px; /* Ancho máximo del párrafo para evitar que se extienda demasiado */
+    font-size: 1rem;
+    margin-bottom: 20px;
+    color: #555;
+    max-width: 800px;
     margin-left: auto;
-    margin-right: auto; /* Centra el párrafo */
-    line-height: 1.6; /* Mejora la legibilidad del texto */
+    margin-right: auto;
+    line-height: 1.6;
 }
 
 .gallery-preview .call-to-action {
-    background-color: #FFD700; /* Color de fondo del botón */
-    color: #000; /* Color del texto del botón */
+    background-color: #FFD700;
+    color: #000;
     border: none;
-    padding: 10px 20px; /* Espaciado interno del botón */
+    padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px; /* Bordes redondeados para un diseño suave */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transiciones suaves para el hover */
-    text-decoration: none; /* Elimina el subrayado en el enlace */
-    display: inline-block; /* Asegura que el botón se comporte como un botón */
-    margin-top: 10px; /* Espacio superior para separar el botón del párrafo */
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 10px;
 }
 
 .gallery-preview .call-to-action:hover {
-    background-color: #E6C200; /* Color más oscuro para el hover */
-    color: #000; /* Mantiene el texto en negro */
+    background-color: #E6C200;
+    color: #000;
 }
-
-
 
 .gallery-section {
     background-color: #FFF;
@@ -506,11 +486,12 @@ footer {
 }
 
 .gallery-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    display: flex;
+    flex-direction: column;
     gap: 20px;
     max-width: 1200px;
     margin: auto;
+    padding: 0 10px;
 }
 
 .gallery-image {
@@ -522,32 +503,32 @@ footer {
 }
 
 .gallery-image:hover {
-    transform: scale(1.05);
+    transform: scale(1.02);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .back-to-home {
-    background-color: #FFF; /* Fondo blanco para la sección */
-    padding: 40px 20px; /* Espaciado interno */
-    text-align: center; /* Centra el contenido */
-    border-top: 1px solid #DDD; /* Línea superior para separar visualmente */
+    background-color: #FFF;
+    padding: 40px 20px;
+    text-align: center;
+    border-top: 1px solid #DDD;
 }
 
 .back-to-home .call-to-action {
-    background-color: #FFD700; /* Color del botón */
-    color: #000; /* Color del texto del botón */
+    background-color: #FFD700;
+    color: #000;
     border: none;
-    padding: 10px 20px; /* Espaciado interno */
+    padding: 10px 20px;
     font-size: 1rem;
     cursor: pointer;
-    border-radius: 5px; /* Bordes redondeados */
+    border-radius: 5px;
     transition: background-color 0.3s ease, color 0.3s ease;
-    text-decoration: none; /* Elimina el subrayado en el enlace */
-    display: inline-block; /* Asegura que el botón se vea como un botón */
-    margin-top: 20px; /* Espacio superior para separar el botón */
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 20px;
 }
 
 .back-to-home .call-to-action:hover {
-    background-color: #E6C200; /* Color más oscuro al pasar el cursor */
-    color: #000; /* Mantiene el texto en negro */
+    background-color: #E6C200;
+    color: #000;
 }

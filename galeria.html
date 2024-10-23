@@ -33,49 +33,37 @@
     </nav>
 </header>
 
-<!-- Sección de Galería -->
 <section class="gallery-section">
     <h2>Galería de Nuestros Arreglos</h2>
-    <div class="gallery-grid">
+    <div class="gallery-grid" id="galleryGrid">
+        <!-- Imágenes iniciales -->
         <picture>
             <source srcset="images/gallery/1.avif" type="image/avif">
             <img src="images/gallery/1.jpg" alt="Arreglo floral 1" class="gallery-image" loading="lazy">
         </picture>
-        <picture>
-            <source srcset="images/gallery/2.avif" type="image/avif">
-            <img src="images/gallery/2.jpg" alt="Arreglo floral 2" class="gallery-image" loading="lazy">
-        </picture>
-        <picture>
-            <source srcset="images/gallery/3.avif" type="image/avif">
-            <img src="images/gallery/3.jpg" alt="Arreglo floral 3" class="gallery-image" loading="lazy">
-        </picture>
-        <!-- Añade más imágenes según sea necesario -->
     </div>
+    <!-- Trigger para el scroll infinito -->
+    <div id="load-more-trigger"></div>
 </section>
 
-<!-- Sección de Volver a la Página Principal -->
 <section class="back-to-home">
     <a href="index.html" class="call-to-action">Volver a la Página Principal</a>
 </section>
-
 
 <footer>
     <p>&copy; 2024 Zaraflor. Todos los derechos reservados.</p>
 </footer>
 
-<!-- Botón para volver al inicio con icono de FontAwesome -->
 <button class="scroll-top" id="scrollTopBtn">
     <i class="fas fa-arrow-up"></i>
 </button>
 
 <script>
-    // Mostrar/ocultar el menú
     document.getElementById('menuToggle').addEventListener('click', function () {
         const menu = document.getElementById('menu');
         menu.classList.toggle('active');
     });
 
-    // Cerrar el menú cuando se hace clic en cualquier enlace del menú
     document.querySelectorAll('.menu-link').forEach(link => {
         link.addEventListener('click', function () {
             const menu = document.getElementById('menu');
@@ -83,10 +71,8 @@
         });
     });
 
-    // Funcionalidad del botón de scroll-to-top
     const scrollTopBtn = document.getElementById('scrollTopBtn');
 
-    // Mostrar el botón cuando el usuario haga scroll hacia abajo
     window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             scrollTopBtn.style.display = 'block';
@@ -95,10 +81,11 @@
         }
     });
 
-    // Desplazarse suavemente hacia la parte superior al hacer clic
     scrollTopBtn.addEventListener('click', function () {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
 </script>
+<script src="scripts/gallery.js" defer></script>
+
 </body>
 </html>

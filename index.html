@@ -20,7 +20,7 @@
     <meta property="og:description" content="Floristeria Zaraflor Huesca, gran surtido de flores y plantas, ramos y centros naturales y artificiales, ramos de novia y regalos. Envio por todo el mundo gracias a Interflora" />
     <meta property="og:url" content="https://zaraflor.github.io/" />
     <meta property="og:site_name" content="Floristería Zaraflor Huesca" />
-    <meta property="og:image" content="https://zaraflor.github.io/images/hero-image2.avif" />
+    <meta property="og:image" content="https://zaraflor.github.io/images/hero-image.avif" />
 
     <meta name="msvalidate.01" content="F8685620CC0FBB8C69EE889B25A70493" />
     <meta name="google-site-verification" content="rgvn_VKpFzU1g-tz5f5EPj2dui4OSaQahKvztJgCnFo" />
@@ -47,16 +47,15 @@
 
 <section class="hero">
     <picture>
-        <source srcset="images/hero-image2.avif" type="image/avif">
-        <img src="images/hero-image2.jpg" alt="Hermosos arreglos florales" class="hero-image">
+        <source srcset="images/hero-image.avif" type="image/avif">
+        <img src="images/hero-image.jpg" alt="Hermosos arreglos florales" class="hero-image">
     </picture>
     <div class="hero-overlay">
-        <h1>Flores que hablan el lenguaje de tus emociones</h1>
-        <button class="call-to-action" onclick="window.location.href='#sobre-nosotros'">Descubre nuestros arreglos</button>
+        <h1>Tu floristería de confianza en Huesca</h1>
+        <button class="call-to-action" onclick="window.location.href='#sobre-nosotros'">Descubre Zaraflor</button>
     </div>
 </section>
 
-<!-- Sección Sobre Nosotros -->
 <section id="sobre-nosotros" class="about-section">
     <div class="about-content">
         <h2>Sobre Nosotros</h2>
@@ -67,7 +66,6 @@
     </div>
 </section>
 
-<!-- Sección Servicios -->
 <section id="servicios" class="services-section">
     <h2>Nuestros Servicios</h2>
     <div class="services">
@@ -91,15 +89,12 @@
     </div>
 </section>
 
-<!-- Sección Galeria -->
 <section class="gallery-preview">
     <h2>Nuestra Galería</h2>
     <p>Explora algunos de nuestros trabajos más recientes y descubre la belleza de nuestros arreglos florales.</p>
     <a href="galeria.html" class="call-to-action">Ver Galería Completa</a>
 </section>
 
-
-<!-- Sección de Contacto -->
 <section id="contacto" class="info-section">
     <h2>Contáctanos</h2>
     <div class="map">
@@ -116,18 +111,13 @@
         <p>Dirección: C/ Santo Cristo de los Milagros 3, 22004 Huesca</p>
 
         <div class="contact-buttons">
-            <!-- Botón para llamar por teléfono -->
             <button class="call-to-action phone" onclick="window.open('tel:+34974221416', '_self')">
                 <i class="fas fa-phone"></i>  Llama al 974 22 14 16
-            </button>
-
-            <!-- Botón de WhatsApp -->
+            </button>>
             <button class="call-to-action whatsapp" onclick="window.open('https://wa.me/34633736806', '_blank')">
                 <i class="fab fa-whatsapp"></i> Chatea con nosotros
             </button>
         </div>
-
-        <!-- Enlaces a Redes Sociales -->
         <div class="social-links">
             <a href="https://www.facebook.com/floristeria.zaraflor.huesca" target="_blank" class="social-link" aria-label="Visítanos en Facebook">
                 <i class="fab fa-facebook-f"></i>
@@ -142,26 +132,21 @@
     </div>
 </section>
 
-
 <footer>
     <p>&copy; 2024 Zaraflor. Todos los derechos reservados.</p>
 </footer>
 
-
-<!-- Botón para volver al inicio con icono de FontAwesome -->
 <button class="scroll-top" id="scrollTopBtn">
     <i class="fas fa-arrow-up"></i>
 </button>
 
 
 <script>
-    // Mostrar/ocultar el menú
     document.getElementById('menuToggle').addEventListener('click', function () {
         const menu = document.getElementById('menu');
         menu.classList.toggle('active');
     });
 
-    // Cerrar el menú cuando se hace clic en cualquier enlace del menú
     document.querySelectorAll('.menu-link').forEach(link => {
         link.addEventListener('click', function () {
             const menu = document.getElementById('menu');
@@ -169,10 +154,8 @@
         });
     });
 
-    // Funcionalidad del botón de scroll-to-top
     const scrollTopBtn = document.getElementById('scrollTopBtn');
 
-    // Mostrar el botón cuando el usuario haga scroll hacia abajo
     window.addEventListener('scroll', function () {
         if (window.scrollY > 300) {
             scrollTopBtn.style.display = 'block';
@@ -181,7 +164,6 @@
         }
     });
 
-    // Desplazarse suavemente hacia la parte superior al hacer clic
     scrollTopBtn.addEventListener('click', function () {
         window.scrollTo({top: 0, behavior: 'smooth'});
     });
