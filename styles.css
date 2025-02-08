@@ -1,10 +1,15 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #FAF3E0;
     color: #333;
 }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto Slab', serif;
+}
+
 
 .header {
     background: #FFF;
@@ -42,6 +47,7 @@ body {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-radius: 5px;
     z-index: 1000;
+    gap: 30px;
 }
 
 .menu.active {
@@ -51,7 +57,7 @@ body {
 .menu-link {
     text-decoration: none;
     color: #333;
-    padding: 10px;
+    padding: 10px 20px;
     display: block;
     transition: background 0.3s;
 }
@@ -88,7 +94,7 @@ body {
 }
 
 .hero-overlay {
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(60, 60, 5, 0.5);
     backdrop-filter: blur(8px);
     color: #FFF;
     text-align: center;
