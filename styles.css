@@ -444,23 +444,23 @@ footer {
 }
 
 .social-link {
-    background: #FFF;
-    color: #333;
-    border: 1px solid #ddd;
-    border-radius: 50%;
-    padding: 10px;
-    font-size: 1.2rem;
-    transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    text-decoration: none;
+    background: none;
+        color: #333;
+        border: 1px solid #bbb; /* Contorno gris */
+        border-radius: 5px; /* Bordes cuadrados como el menú */
+        padding: 8px 12px; /* Mismo espaciado que el botón de menú */
+        font-size: 1.2rem;
+        transition: border-color 0.3s ease, background 0.3s ease, color 0.3s ease;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        text-decoration: none;
 }
 
 .social-link:hover {
-    background-color: #FFD700;
-    color: #000;
-    border-color: #FFD700;
+        border-color: #FFD700; /* Contorno dorado en hover */
+        background: rgba(255, 215, 0, 0.2); /* Fondo ligeramente dorado */
+        color: #000;
 }
 
 .gallery-preview {
