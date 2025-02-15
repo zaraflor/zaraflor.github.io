@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
           content="Floristeria Zaraflor Huesca, gran surtido de flores y plantas, ramos y centros naturales y artificiales, ramos de novia y regalos. Envio por todo el mundo gracias a Interflora.">
-    <title>Floristería Zaraflor Huesca</title>
+    <title>Floristería Zaraflor | Tu Floristería en Huesca</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
@@ -50,8 +50,8 @@
 
 <section class="hero">
     <picture>
-        <source srcset="images/hero-image.avif" type="image/avif">
-        <img src="images/hero-image.jpg" alt="Hermosos arreglos florales" class="hero-image" loading="lazy">
+        <source srcset="images/hero-image.avif" type="image/avif" fetchpriority="high">
+        <img src="images/hero-image.jpg" alt="Hermosos arreglos florales" class="hero-image" loading="lazy" fetchpriority="high">
     </picture>
     <div class="hero-overlay">
         <h1>Tu floristería de confianza en Huesca</h1>
@@ -143,33 +143,7 @@
     <i class="fas fa-arrow-up"></i>
 </button>
 
+<script src="scripts/main.js" defer></script>
 
-<script>
-    document.getElementById('menuToggle').addEventListener('click', function () {
-        const menu = document.getElementById('menu');
-        menu.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.menu-link').forEach(link => {
-        link.addEventListener('click', function () {
-            const menu = document.getElementById('menu');
-            menu.classList.remove('active');
-        });
-    });
-
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 300) {
-            scrollTopBtn.style.display = 'block';
-        } else {
-            scrollTopBtn.style.display = 'none';
-        }
-    });
-
-    scrollTopBtn.addEventListener('click', function () {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    });
-</script>
 </body>
 </html>
