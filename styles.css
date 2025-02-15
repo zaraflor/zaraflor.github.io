@@ -269,7 +269,8 @@ footer {
 .service-icon {
     font-size: 80px;
     color: #FFD700;
-    margin-bottom: 20px;
+    margin-top: 18px;
+    margin-bottom: 1px;
 }
 
 .service h3 {
@@ -432,7 +433,7 @@ footer {
 }
 
 .social-links {
-    margin-top: 15px;
+    margin-top: 20px;
     display: flex;
     justify-content: center;
     gap: 10px;
