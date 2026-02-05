@@ -2,24 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://zaraflor.github.io/</loc>
-        <lastmod>2025-02-08</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <priority>1.0</priority>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://zaraflor.github.io/galeria.html</loc>
-        <lastmod>2025-02-08</lastmod>
+        <lastmod>2026-02-05</lastmod>
         <priority>0.8</priority>
-    </url>
-    <url>
-        <loc>https://zaraflor.github.io/#sobre-nosotros</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://zaraflor.github.io/#servicios</loc>
-        <priority>0.6</priority>
-    </url>
-    <url>
-        <loc>https://zaraflor.github.io/#contacto</loc>
-        <priority>0.6</priority>
+        <changefreq>monthly</changefreq>
     </url>
 </urlset>
