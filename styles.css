@@ -164,6 +164,11 @@ h1, h2, h3, h4, h5, h6 {
     cursor: pointer;
     border-radius: 5px;
     margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero-overlay .call-to-action:hover {
+    background-color: var(--primary-color-hover);
 }
 
 footer {
