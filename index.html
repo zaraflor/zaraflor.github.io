@@ -20,7 +20,7 @@
     <meta property="og:description" content="Floristeria Zaraflor Huesca, gran surtido de flores y plantas, ramos y centros naturales y artificiales, ramos de novia y regalos. Envio por todo el mundo gracias a Interflora" />
     <meta property="og:url" content="https://zaraflor.github.io/" />
     <meta property="og:site_name" content="Floristería Zaraflor Huesca" />
-    <meta property="og:image" content="https://zaraflor.github.io/images/hero-image-2.avif" />
+    <meta property="og:image" content="https://zaraflor.github.io/images/hero-image.avif" />
     <meta name="msvalidate.01" content="F8685620CC0FBB8C69EE889B25A70493" />
     <meta name="google-site-verification" content="rgvn_VKpFzU1g-tz5f5EPj2dui4OSaQahKvztJgCnFo" />
 
@@ -32,7 +32,7 @@
     </noscript>
 
     <!-- Precargar la Imagen -->
-    <link rel="preload" href="images/hero-image-2.avif" as="image" type="image/avif">
+    <link rel="preload" href="images/hero-image.avif" as="image" type="image/avif">
 </head>
 <body>
 <header class="header">
@@ -43,7 +43,7 @@
         </picture>
     </div>
     <nav class="nav">
-        <button class="menu-toggle" id="menuToggle">☰</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
         <ul class="menu" id="menu">
             <li><a href="#sobre-nosotros" class="menu-link">Sobre Nosotros</a></li>
             <li><a href="#servicios" class="menu-link">Servicios</a></li>
@@ -55,12 +55,12 @@
 
 <section class="hero">
     <picture>
-        <source srcset="images/hero-image-2.avif" type="image/avif" fetchpriority="high">
+        <source srcset="images/hero-image.avif" type="image/avif" fetchpriority="high">
         <img src="images/hero-image.jpg" alt="Hermosos arreglos florales" class="hero-image" fetchpriority="high" width="1200" height="800">
     </picture>
     <div class="hero-overlay">
         <h1>Tu floristería de confianza en Huesca</h1>
-        <button class="call-to-action" onclick="window.location.href='#sobre-nosotros'" aria-label="Ir a la sección Sobre Nosotros">Descubre Zaraflor</button>
+        <button class="call-to-action" aria-label="Ir a la sección Sobre Nosotros">Descubre Zaraflor</button>
     </div>
 </section>
 
@@ -119,10 +119,10 @@
         <p>Dirección: C/ Santo Cristo de los Milagros 3, 22004 Huesca</p>
 
         <div class="contact-buttons">
-            <button class="call-to-action phone" onclick="window.open('tel:+34974221416', '_self')">
+            <button class="call-to-action phone">
                 <i class="fas fa-phone"></i>  Llámanos 974 221 416
             </button>
-            <button class="call-to-action whatsapp" onclick="window.open('https://wa.me/34633736806', '_blank')">
+            <button class="call-to-action whatsapp">
                 <i class="fab fa-whatsapp"></i> Whatsapp 633 736 806
             </button>
         </div>
@@ -144,7 +144,7 @@
     <p>&copy; 2026 Zaraflor. Todos los derechos reservados.</p>
 </footer>
 
-<button class="scroll-top" id="scrollTopBtn">
+<button class="scroll-top" id="scrollTopBtn" aria-label="Volver arriba">
     <i class="fas fa-arrow-up"></i>
 </button>
 

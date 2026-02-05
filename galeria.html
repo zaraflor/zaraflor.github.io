@@ -27,7 +27,7 @@
         </a>
     </div>
     <nav class="nav">
-        <button class="menu-toggle" id="menuToggle">☰</button>
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú">☰</button>
         <ul class="menu" id="menu">
             <li><a href="index.html#sobre-nosotros" class="menu-link">Sobre Nosotros</a></li>
             <li><a href="index.html#servicios" class="menu-link">Servicios</a></li>
@@ -58,37 +58,11 @@
     <p>&copy; 2026 Zaraflor. Todos los derechos reservados.</p>
 </footer>
 
-<button class="scroll-top" id="scrollTopBtn">
+<button class="scroll-top" id="scrollTopBtn" aria-label="Volver arriba">
     <i class="fas fa-arrow-up"></i>
 </button>
 
-<script>
-    document.getElementById('menuToggle').addEventListener('click', function () {
-        const menu = document.getElementById('menu');
-        menu.classList.toggle('active');
-    });
-
-    document.querySelectorAll('.menu-link').forEach(link => {
-        link.addEventListener('click', function () {
-            const menu = document.getElementById('menu');
-            menu.classList.remove('active');
-        });
-    });
-
-    const scrollTopBtn = document.getElementById('scrollTopBtn');
-
-    window.addEventListener('scroll', function () {
-        if (window.scrollY > 300) {
-            scrollTopBtn.style.display = 'block';
-        } else {
-            scrollTopBtn.style.display = 'none';
-        }
-    });
-
-    scrollTopBtn.addEventListener('click', function () {
-        window.scrollTo({top: 0, behavior: 'smooth'});
-    });
-</script>
+<script src="scripts/main.js" defer></script>
 <script src="scripts/gallery.js" defer></script>
 
 </body>
