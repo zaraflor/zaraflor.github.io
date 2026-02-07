@@ -593,13 +593,20 @@ footer {
     padding: 40px 20px;
     text-align: center;
     margin-top: 40px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
-.social-media-section h3 {
-    font-size: 1.5rem;
-    margin-bottom: 20px;
-    color: var(--text-color);
-    font-weight: normal;
+.social-media-content {
+    max-width: 800px;
+    margin: auto;
+}
+
+.social-media-content p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--text-color-light);
+    font-size: 1rem; /* Asegura el mismo tamaño base */
 }
 
 /* Modal Styles */

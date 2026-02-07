@@ -42,37 +42,21 @@
 
 <section class="gallery-section">
     <h2>Galería de Nuestros Arreglos</h2>
-    <div class="gallery-grid" id="galleryGrid">
-        <figure class="gallery-item">
-            <picture>
-                <source srcset="images/gallery/1.avif" type="image/avif">
-                <img src="images/gallery/1.jpg" alt="Arreglo floral 1" class="gallery-image" loading="lazy">
-            </picture>
-        </figure>
-        <figure class="gallery-item">
-            <picture>
-                <source srcset="images/gallery/2.avif" type="image/avif">
-                <img src="images/gallery/2.jpg" alt="Arreglo floral 2" class="gallery-image" loading="lazy">
-            </picture>
-        </figure>
-        <figure class="gallery-item">
-            <picture>
-                <source srcset="images/gallery/3.avif" type="image/avif">
-                <img src="images/gallery/3.jpg" alt="Arreglo floral 3" class="gallery-image" loading="lazy">
-            </picture>
-        </figure>
-    </div>
+    <!-- El grid está vacío, se llenará con JS -->
+    <div class="gallery-grid" id="galleryGrid"></div>
 </section>
 
 <section class="social-media-section">
-    Puedes ver muchas más imágenes de nuestros trabajos aquí ...
-    <div class="social-links">
-        <a href="https://www.facebook.com/floristeria.zaraflor.huesca" target="_blank" class="social-link" aria-label="Visítanos en Facebook">
-            <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="https://www.instagram.com/zaraflor.huesca" target="_blank" class="social-link" aria-label="Visítanos en Instagram">
-            <i class="fab fa-instagram"></i>
-        </a>
+    <div class="social-media-content">
+        <p>Puedes ver muchas más imágenes de nuestros trabajos aquí ...</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com/floristeria.zaraflor.huesca" target="_blank" class="social-link" aria-label="Visítanos en Facebook">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://www.instagram.com/zaraflor.huesca" target="_blank" class="social-link" aria-label="Visítanos en Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
     </div>
 </section>
 
@@ -84,7 +68,6 @@
 <div id="imageModal" class="modal" aria-hidden="true">
     <span class="close-modal" aria-label="Cerrar">&times;</span>
     <img class="modal-content" id="modalImage" alt="Vista ampliada">
-    <div id="caption"></div>
 </div>
 
 <footer>
