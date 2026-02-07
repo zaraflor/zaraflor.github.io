@@ -6,13 +6,16 @@
     <title>Galería - Floristería Zaraflor Huesca</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="images/favicon/favicon.ico" type="image/x-icon">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
           media="print" onload="this.media='all'">
 
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap" media="print" onload="this.media='all'">
 
     <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Roboto+Slab:wght@700&display=swap">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     </noscript>
 </head>
@@ -41,10 +44,12 @@
     <h2>Galería de Nuestros Arreglos</h2>
     <div class="gallery-grid" id="galleryGrid">
         <!-- Imágenes iniciales -->
-        <picture>
-            <source srcset="images/gallery/1.avif" type="image/avif">
-            <img src="images/gallery/1.jpg" alt="Arreglo floral 1" class="gallery-image" loading="lazy">
-        </picture>
+        <figure class="gallery-item">
+            <picture>
+                <source srcset="images/gallery/1.avif" type="image/avif">
+                <img src="images/gallery/1.jpg" alt="Arreglo floral 1" class="gallery-image" loading="lazy">
+            </picture>
+        </figure>
     </div>
     <!-- Trigger para el scroll infinito -->
     <div id="load-more-trigger"></div>
@@ -53,6 +58,13 @@
 <section class="back-to-home">
     <a href="index.html" class="call-to-action">Volver a la Página Principal</a>
 </section>
+
+<!-- Modal para visualización de imágenes (Lightbox) -->
+<div id="imageModal" class="modal" aria-hidden="true">
+    <span class="close-modal" aria-label="Cerrar">&times;</span>
+    <img class="modal-content" id="modalImage" alt="Vista ampliada">
+    <div id="caption"></div>
+</div>
 
 <footer>
     <p>&copy; 2026 Zaraflor. Todos los derechos reservados.</p>
