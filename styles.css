@@ -587,6 +587,21 @@ footer {
     color: #000;
 }
 
+/* Social Media Section in Gallery */
+.social-media-section {
+    background-color: var(--bg-light-gray);
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.social-media-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    font-weight: normal;
+}
+
 /* Modal Styles */
 .modal {
     display: none;
