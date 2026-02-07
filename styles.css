@@ -589,10 +589,10 @@ footer {
 
 /* Social Media Section in Gallery */
 .social-media-section {
-    background-color: var(--bg-light-gray);
+    background-color: var(--bg-color);
     padding: 40px 20px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 0; /* Eliminado el margen superior */
     width: 100%;
     box-sizing: border-box;
 }
