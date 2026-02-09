@@ -33,6 +33,67 @@
 
     <!-- Precargar la Imagen -->
     <link rel="preload" href="images/hero-image.avif" as="image" type="image/avif">
+
+    <!-- Datos Estructurados (Schema.org) para Negocio Local -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Florist",
+      "name": "Floristería Zaraflor",
+      "image": "https://www.zaraflor.es/images/logo.png",
+      "@id": "https://www.zaraflor.es",
+      "url": "https://www.zaraflor.es",
+      "telephone": "+34974221416",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "C/ Santo Cristo de los Milagros 3",
+        "addressLocality": "Huesca",
+        "postalCode": "22004",
+        "addressCountry": "ES"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 42.14022816364092,
+        "longitude": -0.4165690814057933
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:30",
+          "closes": "13:30"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "17:00",
+          "closes": "20:00"
+        },
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": "Saturday",
+          "opens": "09:30",
+          "closes": "13:30"
+        }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/floristeria.zaraflor.huesca",
+        "https://www.instagram.com/zaraflor.huesca"
+      ]
+    }
+    </script>
 </head>
 <body>
 <header class="header">
